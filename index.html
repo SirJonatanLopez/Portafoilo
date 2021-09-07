@@ -6,14 +6,18 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
 
   <body>
-    <header class="contendor site-header">
+    <header class="contendor site-header animate__animated animate__bounce">
       <img src="img/NEON2.png" alt="Imagen Título" />
     </header>
     <div class="introduccion contenedor">
-      <h2>
+      <h2 class="animate__animated animate__backInLeft">
         A continuación se muestran los proyectos que he elaborado en mis cursos
         de desarrollo Web, en todos ellos se utiliza lenguaje HTML5, CSS3, en la
         mayoría JS y en algunos de ellos herramientas como SASS por medio de
@@ -27,6 +31,26 @@
     <div class="contenedor">
 
       <main class="contenido-principal">
+        <article class="entrada">
+          <div class="imagen">
+            <img class="imagen__site" src="img/appheroes.png" alt="Heroes" />
+          </div>
+          <div class="texto-entrada">
+            <h2>App de Héroes</h2>
+            <p>
+              App con una base de datos de diferentes superheroes cargados desde un sencillo servidor JSON. Desde un menú se puede acceder a la lista actual, agregar o modificar los heroes existentes.
+              Se utiliza LazyLoad para cargar las rutas hijas de cada sección, Angular Material para los estilos, y un Guard para tener que hacer login antes de acceder al listado de Heroes.
+              
+            </p>
+            <a
+              href="https://sharp-bose-374841.netlify.app/"
+              class="boton"
+              target="_blank"
+              >Visitar</a
+            >
+          </div>
+        </article>
+
         <article class="entrada">
           <div class="imagen">
             <img class="imagen__site" src="img/apppaises.png" alt="Paises" />
@@ -285,13 +309,11 @@
 
     <footer class="site-footer">
       <section class="contenedor sobre-mi">
-        <h2>Acerca de Mí</h2>
+        <h2 >Acerca de Mí </h2>
         <p>
           Mi nombre es Jonatan López, soy Ingeniero Electricista con experiencia
-          en diseños eléctricos de media y baja tensión y actualmente me
-          encuentro estudiando desarollo web y lenguaje de programación Java ya
-          que es un tema que me apasiona y que además puede ayudarme en el tema
-          laboral
+          en diseños eléctricos y actualmente estudiante
+          de desarrollo web tanto de la parte Frontend como Backend. Actualmente en busqueda de oportunidades laborales que me permitan crecer
         </p>
         <p>
           Mi número de contacto es el siguiente:
